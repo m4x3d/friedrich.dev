@@ -25,7 +25,7 @@ export const SocialMediaLinks: FunctionComponent = () => {
       <Link href="https://www.linkedin.com/in/max-friedrich-119852206/" {...linkProps}>
         <Icon as={GrLinkedinOption} {...iconProps} />
       </Link>
-      <Link href="https://twitter.com/m4xd_7" {...linkProps}>
+      <Link href="https://twitter.com/m4x3d_" {...linkProps}>
         <Icon as={GrTwitter} {...iconProps} />
       </Link>
     </HStack>
