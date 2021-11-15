@@ -1,6 +1,7 @@
-import { Box, HStack, Link, Text } from '@chakra-ui/layout';
+import { Box, HStack, Text } from '@chakra-ui/layout';
 import { Center, Icon } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import Link from 'next/link';
 import { FunctionComponent } from 'react';
 import { FaHeart } from 'react-icons/fa';
 
