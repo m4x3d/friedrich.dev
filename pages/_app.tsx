@@ -1,19 +1,16 @@
-import {
-  ChakraProvider,
-  ColorModeOptions,
-  ColorModeProvider,
-} from "@chakra-ui/react";
-import type { AppProps } from "next/app";
-import "../styles/globals.css";
+import { ChakraProvider, ColorModeOptions, ColorModeProvider } from '@chakra-ui/react';
+import type { AppProps } from 'next/app';
+import '../styles/globals.css';
+import theme from '../styles/theme';
 
 const options: ColorModeOptions = {
-  initialColorMode: "light",
+  initialColorMode: 'light',
   useSystemColorMode: true,
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <ColorModeProvider options={options}>
         <Component {...pageProps} />
       </ColorModeProvider>

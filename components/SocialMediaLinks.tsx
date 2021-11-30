@@ -1,33 +1,28 @@
 import Icon from '@chakra-ui/icon';
-import { HStack, Link } from '@chakra-ui/layout';
-import { FunctionComponent } from 'react';
+import { HStack, Link, LinkProps } from '@chakra-ui/layout';
+import type { FunctionComponent } from 'react';
 import { FaGitlab, FaXing } from 'react-icons/fa';
 import { GrGithub, GrLinkedinOption, GrMedium, GrTwitter } from 'react-icons/gr';
 
-export const SocialMediaLinks: FunctionComponent = () => {
-  const linkProps = { h: '2rem' };
-  const iconProps = { boxSize: '2rem' };
-
-  return (
-    <HStack spacing="2rem">
-      <Link href="https://gitlab.com/m4x3d" {...linkProps}>
-        <Icon as={FaGitlab} {...iconProps} />
-      </Link>
-      <Link href="https://github.com/m4x3d" {...linkProps}>
-        <Icon as={GrGithub} {...iconProps} />
-      </Link>
-      <Link href="https://medium.com/@m4x3d" {...linkProps}>
-        <Icon as={GrMedium} {...iconProps} />
-      </Link>
-      <Link href="https://www.xing.com/profile/Max_Friedrich46/cv" {...linkProps}>
-        <Icon as={FaXing} {...iconProps} />
-      </Link>
-      <Link href="https://www.linkedin.com/in/max-friedrich-119852206/" {...linkProps}>
-        <Icon as={GrLinkedinOption} {...iconProps} />
-      </Link>
-      <Link href="https://twitter.com/m4x3d_" {...linkProps}>
-        <Icon as={GrTwitter} {...iconProps} />
-      </Link>
-    </HStack>
-  );
-};
+export const SocialMediaLinks: FunctionComponent<LinkProps> = ({ h = '2rem', boxSize = '2rem' }) => (
+  <HStack spacing="2rem">
+    <Link href="https://gitlab.com/m4x3d" h={h}>
+      <Icon as={FaGitlab} boxSize={boxSize} />
+    </Link>
+    <Link href="https://github.com/m4x3d" h={h}>
+      <Icon as={GrGithub} boxSize={boxSize} />
+    </Link>
+    <Link href="https://medium.com/@m4x3d" h={h}>
+      <Icon as={GrMedium} boxSize={boxSize} />
+    </Link>
+    <Link href="https://www.xing.com/profile/Max_Friedrich46/cv" h={h}>
+      <Icon as={FaXing} boxSize={boxSize} />
+    </Link>
+    <Link href="https://www.linkedin.com/in/max-friedrich-119852206/" h={h}>
+      <Icon as={GrLinkedinOption} boxSize={boxSize} />
+    </Link>
+    <Link href="https://twitter.com/m4x3d_" h={h}>
+      <Icon as={GrTwitter} boxSize={boxSize} />
+    </Link>
+  </HStack>
+);

@@ -1,14 +1,8 @@
 import { Heading, HStack, Link, Text, VStack } from '@chakra-ui/react';
-import { As } from '@chakra-ui/system';
 import { NextPage } from 'next';
 import React from 'react';
 import { HiddenEmail } from '../components/HiddenEmail';
 import { PageLayout } from '../components/Layout/PageLayout';
-
-const subHeadingProps = {
-  as: 'h3' as As<any>,
-  size: 'lg',
-};
 
 export const Imprint: NextPage = () => (
   <PageLayout>
@@ -17,23 +11,21 @@ export const Imprint: NextPage = () => (
         Impressum
       </Heading>
       <VStack spacing="0">
-        <Heading as="h3" size="lg" m="0.5rem">
-          Angaben gemäß § 5 TMG
-        </Heading>
+        <Heading m="0.5rem">Angaben gemäß § 5 TMG</Heading>
         <Text>Max Friedrich</Text>
         <Text>Michaelisstraße 18c</Text>
         <Text>64293 Darmstadt</Text>
       </VStack>
 
       <VStack>
-        <Heading {...subHeadingProps}>Kontakt</Heading>
+        <Heading>Kontakt</Heading>
         <HStack h="2rem">
           <Text>E-Mail:</Text>
           <HiddenEmail />
         </HStack>
       </VStack>
 
-      <Heading {...subHeadingProps}>Haftung für Inhalte</Heading>
+      <Heading>Haftung für Inhalte</Heading>
       <Text>
         Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
         Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht, übermittelte oder
@@ -47,7 +39,7 @@ export const Imprint: NextPage = () => (
         umgehend entfernen.
       </Text>
 
-      <Heading {...subHeadingProps}>Haftung für Links</Heading>
+      <Heading>Haftung für Links</Heading>
       <Text>
         Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb
         können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist
@@ -61,7 +53,7 @@ export const Imprint: NextPage = () => (
         entfernen.
       </Text>
 
-      <Heading {...subHeadingProps}>Urheberrecht</Heading>
+      <Heading>Urheberrecht</Heading>
       <Text>
         Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
         Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen
