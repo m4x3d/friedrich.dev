@@ -6,6 +6,9 @@
 # Next build dir
 .next/
 
+# Next output dir
+out/*
+
 ### react ###
 .DS_*
 *.log
