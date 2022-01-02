@@ -1,6 +1,6 @@
 import { ArrowLeftIcon } from '@chakra-ui/icons';
 import { Button, Heading, HStack, Text } from '@chakra-ui/react';
-import { NextPage } from 'next';
+import type { NextPage } from 'next';
 import { useRouter } from 'next/dist/client/router';
 import { PageLayout } from '../components/Layout/PageLayout';
 

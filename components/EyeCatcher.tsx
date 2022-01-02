@@ -25,7 +25,7 @@ const textFontProps = {
   'material-toneMapped': false,
 };
 
-// text type of @react-three/drei is bad af
+// typing of text props of @react-three/drei is bad af
 const Word: FunctionComponent<any> = ({ children, ...props }) => {
   const color = new Color();
 

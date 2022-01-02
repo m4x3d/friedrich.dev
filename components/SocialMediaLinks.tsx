@@ -1,10 +1,12 @@
-import Icon from '@chakra-ui/icon';
-import { HStack, Link, LinkProps } from '@chakra-ui/layout';
+import { HStack, Icon, Link, LinkProps } from '@chakra-ui/react';
 import type { FunctionComponent } from 'react';
 import { FaGitlab, FaXing } from 'react-icons/fa';
 import { GrGithub, GrLinkedinOption, GrMedium, GrTwitter } from 'react-icons/gr';
 
-export const SocialMediaLinks: FunctionComponent<LinkProps> = ({ h = '2rem', boxSize = '2rem' }) => (
+export const SocialMediaLinks: FunctionComponent<LinkProps> = ({
+  h = '2rem',
+  boxSize = '2rem',
+}) => (
   <HStack spacing="2rem">
     <Link href="https://gitlab.com/m4x3d" h={h}>
       <Icon as={FaGitlab} boxSize={boxSize} />

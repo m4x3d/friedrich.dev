@@ -1,11 +1,11 @@
 import { ChakraProvider, ColorModeOptions, ColorModeProvider } from '@chakra-ui/react';
+import '@fontsource/work-sans/400.css';
+import '@fontsource/work-sans/500.css';
 import type { AppProps } from 'next/app';
-import '../styles/globals.css';
-import theme from '../styles/theme';
+import theme from '../utils/theme/theme';
 
 const options: ColorModeOptions = {
-  initialColorMode: 'light',
-  useSystemColorMode: true,
+  initialColorMode: 'dark',
 };
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,5 +1,5 @@
 import { Heading, HStack, Link, Text, VStack } from '@chakra-ui/react';
-import { type NextPage } from 'next';
+import type { NextPage } from 'next';
 import { EyeCatcher } from '../components/EyeCatcher';
 import { PageLayout } from '../components/Layout/PageLayout';
 import { SocialMediaLinks } from '../components/SocialMediaLinks';
@@ -9,7 +9,7 @@ export const Home: NextPage = () => (
     <Heading pt="15vh">Hey there!</Heading>
     <HStack p="2rem" minW="28rem">
       <Text>My name is Max. I'm a Web Developer at</Text>
-      <Link href="https://www.incloud.de/">INCLOUD</Link>
+      <Link href="https://www.incloud.de/">Incloud</Link>
       <Text marginInlineStart="0 !important">.</Text>
     </HStack>
     <SocialMediaLinks />
