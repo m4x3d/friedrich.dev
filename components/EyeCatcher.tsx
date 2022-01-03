@@ -94,7 +94,7 @@ export const EyeCatcher: FunctionComponent = () => {
   return (
     <Box
       mt="3rem"
-      w="50rem"
+      w={{ sm: '90vw', lg: '50rem' }}
       h="30rem"
       border="1px solid"
       borderColor={borderColor}
