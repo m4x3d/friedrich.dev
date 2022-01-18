@@ -1,8 +1,8 @@
 import { Box, Icon, useColorModeValue } from '@chakra-ui/react';
 import { Text, TrackballControls } from '@react-three/drei';
-import { Canvas, ThreeEvent, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import type { FunctionComponent } from 'react';
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef } from 'react';
 import { BsArrowsMove } from 'react-icons/bs';
 import { Color, Spherical, Vector3 } from 'three';
 
@@ -28,28 +28,16 @@ const textFontProps = {
 // typing of text props of @react-three/drei is bad af
 const Word: FunctionComponent<any> = ({ children, ...props }) => {
   const color = new Color();
-
   const ref = useRef();
-  const [hovered, setHovered] = useState(false);
-  const over = (event: ThreeEvent<PointerEvent>) => (event.stopPropagation(), setHovered(true));
 
   useFrame(({ camera }) => {
     // Make text face the camera
     (ref.current as any)?.quaternion.copy(camera.quaternion);
     // Animate font color
-    (ref.current as any)?.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1);
+    (ref.current as any)?.material.color.lerp(color.set('white'), 0.1);
   });
 
-  return (
-    <Text
-      ref={ref}
-      onPointerOver={over}
-      onPointerOut={() => setHovered(false)}
-      {...props}
-      {...textFontProps}
-      children={children}
-    />
-  );
+  return <Text ref={ref} {...props} {...textFontProps} children={children} />;
 };
 
 interface CloudProps {
