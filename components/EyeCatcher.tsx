@@ -14,8 +14,9 @@ const techStack = [
   'CI/CD',
   'Gatsby',
   'Next.js',
-  'Cypress',
   'Jest',
+  'Cypress',
+  'Terraform',
   'AWS',
 ];
 
