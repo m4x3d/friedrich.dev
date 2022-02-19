@@ -35,7 +35,7 @@ jobs:
         run: yarn build
         env:
           CI: true
-          SITE_URL: friedrich.dev
+          SITE_URL: https://friedrich.dev
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
