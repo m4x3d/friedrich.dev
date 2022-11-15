@@ -1,7 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
-import { Heading } from './components/heading';
-import { Link } from './components/link';
-import { Text } from './components/text';
+import { Heading, Link, Text } from './components';
 import { fonts } from './fonts';
 
 const theme = extendTheme({
