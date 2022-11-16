@@ -1,7 +1,7 @@
 import { useColorMode } from '@chakra-ui/color-mode';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { Flex, IconButton } from '@chakra-ui/react';
-import type { FunctionComponent } from 'react';
+import { Flex, Icon, IconButton } from '@chakra-ui/react';
+import { type FunctionComponent } from 'react';
+import { BsMoon, BsSun } from 'react-icons/bs';
 
 export const PageHeader: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -11,7 +11,7 @@ export const PageHeader: FunctionComponent = () => {
       <IconButton
         aria-label="toggle dark mode"
         onClick={toggleColorMode}
-        icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+        icon={<Icon as={colorMode === 'light' ? BsMoon : BsSun} />}
       />
     </Flex>
   );

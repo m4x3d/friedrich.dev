@@ -1,7 +1,7 @@
-import { ArrowLeftIcon } from '@chakra-ui/icons';
-import { Button, Heading, HStack, Text } from '@chakra-ui/react';
-import type { NextPage } from 'next';
+import { Button, Heading, HStack, Icon, Text } from '@chakra-ui/react';
+import { type NextPage } from 'next';
 import { useRouter } from 'next/dist/client/router';
+import { BsArrowLeft } from 'react-icons/bs';
 import { PageLayout } from '../components/Layout/PageLayout';
 
 export const NotFoundPage: NextPage = () => {
@@ -11,8 +11,8 @@ export const NotFoundPage: NextPage = () => {
     <PageLayout>
       <Heading pt="20vh">404 - Page not found :(</Heading>
       <Button onClick={() => router.back()}>
-        <HStack spacing="1rem">
-          <ArrowLeftIcon />
+        <HStack spacing="2">
+          <Icon as={BsArrowLeft} boxSize="6" />
           <Text>Go Back</Text>
         </HStack>
       </Button>
