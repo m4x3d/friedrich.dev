@@ -4,7 +4,7 @@ import type { FunctionComponent } from 'react';
 import { ChakraLogo } from '../ChakraLogo';
 
 export const PageFooter: FunctionComponent = () => (
-  <VStack pos="absolute" bottom="4" w="full">
+  <VStack as="footer" pos="absolute" bottom="4" w="full">
     <HStack>
       <Text>Made with</Text>
       <Link href="https://chakra-ui.com/" target="_blank">
@@ -13,11 +13,6 @@ export const PageFooter: FunctionComponent = () => (
     </HStack>
     <HStack divider={<Text px="2">|</Text>}>
       <Text>&copy; 2021 - {new Date().getFullYear()}</Text>
-      <Text fontWeight="bold">
-        <Link as={NextLink} href="/">
-          Max Friedrich
-        </Link>
-      </Text>
       <Text fontWeight="bold">
         <Link as={NextLink} href="/imprint">
           Imprint
