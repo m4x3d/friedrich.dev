@@ -14,10 +14,10 @@ export const PageLayout: FunctionComponent<BoxProps> = ({ children, ...props }) 
   );
 
   return (
-    <Box minH="100vh" pb="8rem" color={color} bg={bg} {...props}>
+    <Box minH="100vh" pb="32" color={color} bg={bg} {...props}>
       <PageHeader />
       <Center as="main">
-        <VStack width={{ base: '80%', lg: '70%' }} maxW="80rem" minH="25rem">
+        <VStack width={{ base: '80%', lg: '70%', xl: '60%' }} maxW="80rem" minH="25rem">
           {children}
         </VStack>
       </Center>

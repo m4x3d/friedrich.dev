@@ -5,12 +5,12 @@ import { PageLayout } from '../components/Layout/PageLayout';
 
 export const Imprint: NextPage = () => (
   <PageLayout>
-    <VStack spacing="2rem">
-      <Heading as="h1" size="2xl" m="0.5rem">
+    <VStack spacing="8">
+      <Heading as="h1" size="2xl" m="2">
         Impressum
       </Heading>
       <VStack spacing="0">
-        <Heading m="0.5rem">Angaben gemäß § 5 TMG</Heading>
+        <Heading m="2">Angaben gemäß § 5 TMG</Heading>
         <Text>Max Friedrich</Text>
         <Text>Michaelisstraße 18c</Text>
         <Text>64293 Darmstadt</Text>
@@ -18,7 +18,7 @@ export const Imprint: NextPage = () => (
 
       <VStack>
         <Heading>Kontakt</Heading>
-        <HStack h="2rem">
+        <HStack h="8">
           <Text>E-Mail:</Text>
           <HiddenEmail />
         </HStack>
@@ -69,7 +69,7 @@ export const Imprint: NextPage = () => (
         wir derartige Inhalte umgehend entfernen.
       </Text>
 
-      <HStack pb="10rem">
+      <HStack pb="40">
         <Text>Quelle:</Text>
         <Link href="https://www.e-recht24.de/impressum-generator.html">
           https://www.e-recht24.de/impressum-generator.html

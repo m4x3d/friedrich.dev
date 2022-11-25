@@ -4,14 +4,14 @@ import type { FunctionComponent } from 'react';
 import { ChakraLogo } from '../ChakraLogo';
 
 export const PageFooter: FunctionComponent = () => (
-  <VStack pos="absolute" bottom="1rem" w="full">
+  <VStack pos="absolute" bottom="4" w="full">
     <HStack>
       <Text>Made with</Text>
-      <Link href="https://chakra-ui.com/">
-        <ChakraLogo cursor="pointer" h="1.25rem" pb="0.05rem" />
+      <Link href="https://chakra-ui.com/" target="_blank">
+        <ChakraLogo cursor="pointer" h="5" />
       </Link>
     </HStack>
-    <HStack divider={<Text px="0.5rem">|</Text>}>
+    <HStack divider={<Text px="2">|</Text>}>
       <Text>&copy; 2021 - {new Date().getFullYear()}</Text>
       <Text fontWeight="bold">
         <Link as={NextLink} href="/">

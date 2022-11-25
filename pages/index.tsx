@@ -6,7 +6,7 @@ import { SocialMediaLinks } from '../components/SocialMediaLinks';
 export const Home: NextPage = () => (
   <PageLayout>
     <Heading pt="15vh">Hey there!</Heading>
-    <Text p="2rem">
+    <Text p="8">
       <Highlight
         query={['frontends', 'react', 'typescript', 'serverless backends', 'aws', 'terraform']}
         styles={{

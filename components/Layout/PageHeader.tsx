@@ -7,7 +7,7 @@ export const PageHeader: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex as="header" p="1rem" justify="flex-end">
+    <Flex as="header" p="4" justify="flex-end">
       <IconButton
         aria-label="toggle dark mode"
         onClick={toggleColorMode}
