@@ -38,7 +38,7 @@ jobs:
           SITE_URL: https://friedrich.dev
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: ionos-deploy-now/deploy-to-ionos-action@v1
+        uses: ionos-deploy-now/deploy-to-ionos-action@v2
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           bootstrap-deploy: ${{ steps.project.outputs.bootstrap-deploy }}
