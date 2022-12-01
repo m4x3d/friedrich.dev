@@ -22,7 +22,7 @@ jobs:
           submodules: 'recursive'
       - name: Setup Node.js 14.x
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 14.x
       - name: Prepare project environment
