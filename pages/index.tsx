@@ -14,7 +14,7 @@ export const Home: NextPage = () => (
           color: 'inherit',
         }}
       >
-        My name is Max. I'm a Web Developer with a focus on Frontends built with React and
+        My name is Max. I&apos;m a Web Developer with a focus on Frontends built with React and
         TypeScript as well as serverless backends with AWS and Terraform.
       </Highlight>
     </Text>
