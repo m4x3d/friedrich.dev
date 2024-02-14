@@ -7,7 +7,7 @@ export const PageFooter: FunctionComponent = () => (
   <VStack as="footer" pos="absolute" bottom="4" w="full">
     <HStack>
       <Text>Made with</Text>
-      <Link href="https://chakra-ui.com/" target="_blank">
+      <Link href="https://chakra-ui.com/" isExternal>
         <ChakraLogo cursor="pointer" h="5" />
       </Link>
     </HStack>
