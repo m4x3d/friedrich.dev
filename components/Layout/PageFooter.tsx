@@ -13,11 +13,9 @@ export const PageFooter: FunctionComponent = () => (
     </HStack>
     <HStack divider={<Text px="2">|</Text>}>
       <Text>&copy; 2021 - {new Date().getFullYear()}</Text>
-      <Text fontWeight="bold">
-        <Link as={NextLink} href="/imprint">
-          Imprint
-        </Link>
-      </Text>
+      {/* <Link as={NextLink} fontWeight="bold" href="/imprint">
+        Imprint
+      </Link> */}
     </HStack>
   </VStack>
 );
