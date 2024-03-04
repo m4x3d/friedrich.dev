@@ -1044,9 +1044,9 @@
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
 "@fontsource/work-sans@^5.0.16":
-  version "5.0.16"
-  resolved "https://registry.yarnpkg.com/@fontsource/work-sans/-/work-sans-5.0.16.tgz#ddeb5e3cd637f4ec0e543a4b8866d823667ea51e"
-  integrity sha512-NSWgUQC7MIV4ujGTZ5qxHwEZ5ttOVtY3OhVa3ESj+rB+BiN5XVxEwkUEoJ4mnWTYB3ibwn45S/V7TgjDuG21kg==
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/work-sans/-/work-sans-5.0.17.tgz#e8d19c404406c64839c837be1f36566ea5965297"
+  integrity sha512-UJ2wSmg6Deif975EBFQND7wlSU84aUJiJO6NWK7X30fgCMroP+3DFsWKH0L4hTPwEeLNKzCdpF5sNxm99pZZ2w==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.14"
@@ -3467,6 +3467,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
