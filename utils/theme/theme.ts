@@ -4,7 +4,9 @@ import { fonts } from './fonts';
 
 const theme = extendTheme({
   fonts,
-  initialColorMode: 'dark',
+  config: {
+    initialColorMode: 'dark',
+  },
   components: {
     Heading,
     Link,
