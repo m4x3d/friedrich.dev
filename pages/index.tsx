@@ -5,10 +5,10 @@ import { SocialMediaLinks } from '../components/SocialMediaLinks';
 
 export const Home: NextPage = () => (
   <PageLayout>
-    <Heading pt="15vh">Hey there!</Heading>
-    <Text p="8">
+    <Heading pt="15vh" size="3xl">Hey there!</Heading>
+    <Text p="8" fontSize="lg">
       <Highlight
-        query={['frontends', 'react', 'typescript', 'serverless backends', 'aws', 'terraform']}
+        query={['Frontends', 'React', 'TypeScript', 'serverless backends', 'AWS', 'Terraform']}
         styles={{
           textDecoration: 'underline double',
           color: 'inherit',
