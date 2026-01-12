@@ -11,7 +11,7 @@ export const NotFoundPage: NextPage = () => {
     <PageLayout>
       <Heading pt="20vh">404 - Page not found :(</Heading>
       <Button onClick={() => router.back()}>
-        <HStack spacing="2">
+        <HStack gap="2">
           <Icon as={BsArrowLeft} boxSize="6" />
           <Text>Go Back</Text>
         </HStack>
