@@ -41,3 +41,5 @@ sketch
 !.vscode/*.code-snippets
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,nextjs
+
+.env
